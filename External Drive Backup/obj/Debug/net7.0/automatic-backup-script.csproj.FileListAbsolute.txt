@@ -13,3 +13,18 @@ C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\
 C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\obj\Debug\net7.0\automatic-backup-script.pdb
 C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\obj\Debug\net7.0\automatic-backup-script.genruntimeconfig.cache
 C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\obj\Debug\net7.0\ref\automatic-backup-script.dll
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\bin\Debug\net7.0\automatic-backup-script.exe
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\bin\Debug\net7.0\automatic-backup-script.deps.json
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\bin\Debug\net7.0\automatic-backup-script.runtimeconfig.json
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\bin\Debug\net7.0\automatic-backup-script.dll
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\bin\Debug\net7.0\automatic-backup-script.pdb
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.csproj.AssemblyReference.cache
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.AssemblyInfoInputs.cache
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.AssemblyInfo.cs
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.csproj.CoreCompileInputs.cache
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.dll
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\refint\automatic-backup-script.dll
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.pdb
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\automatic-backup-script.genruntimeconfig.cache
+C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\obj\Debug\net7.0\ref\automatic-backup-script.dll

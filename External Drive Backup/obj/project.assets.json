@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hahmcm\\Desktop\\Custom Programs\\AutomaticBackup\\automatic-backup-script\\automatic-backup-script.csproj",
+      "projectUniqueName": "C:\\Users\\hahmcm\\Desktop\\Custom Programs\\AutomaticBackup\\automatic-backup-script\\External Drive Backup\\automatic-backup-script.csproj",
       "projectName": "automatic-backup-script",
-      "projectPath": "C:\\Users\\hahmcm\\Desktop\\Custom Programs\\AutomaticBackup\\automatic-backup-script\\automatic-backup-script.csproj",
+      "projectPath": "C:\\Users\\hahmcm\\Desktop\\Custom Programs\\AutomaticBackup\\automatic-backup-script\\External Drive Backup\\automatic-backup-script.csproj",
       "packagesPath": "C:\\Users\\hahmcm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hahmcm\\Desktop\\Custom Programs\\AutomaticBackup\\automatic-backup-script\\obj\\",
+      "outputPath": "C:\\Users\\hahmcm\\Desktop\\Custom Programs\\AutomaticBackup\\automatic-backup-script\\External Drive Backup\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hahmcm\\AppData\\Roaming\\NuGet\\NuGet.Config"
