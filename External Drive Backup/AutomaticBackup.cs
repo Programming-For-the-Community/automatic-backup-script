@@ -4,7 +4,7 @@
     </summary>
 */
 class AutomaticBackup
-{   
+{
     /// <value><c>backupsFolder</c> is the name of the master backup directory</value>
     private string backupsFolder = @"Laptop Backups\";
 
@@ -32,7 +32,7 @@ class AutomaticBackup
         DriveLocation = $@"{driveLocation}:\";
         DailyFolder = $@"{DateTime.Now.ToString("ddd-ddMMMyyyy")}\";
     }
-    
+
     /**
         <summary>
             Creates a backup of the C: drive at the location defined by <paramref name="args"/>[0]
@@ -42,7 +42,14 @@ class AutomaticBackup
     */
     static void Main(string[] args)
     {
-        AutomaticBackup ab = new AutomaticBackup(args[0].ToUpper());
+        if (args.Length > 0)
+        {
+            AutomaticBackup ab = new AutomaticBackup(args[0].ToUpper());
+        }
+        else
+        {
+            AutomaticBackup ab = new AutomaticBackup("D");
+        }
 
         bool hasDDrive = false;
 
