@@ -42,13 +42,14 @@ class AutomaticBackup
     */
     static void Main(string[] args)
     {
+        AutomaticBackup ab;
         if (args.Length > 0)
         {
-            AutomaticBackup ab = new AutomaticBackup(args[0].ToUpper());
+            ab = new AutomaticBackup(args[0].ToUpper());
         }
         else
         {
-            AutomaticBackup ab = new AutomaticBackup("D");
+            ab = new AutomaticBackup("D");
         }
 
         bool hasDDrive = false;
