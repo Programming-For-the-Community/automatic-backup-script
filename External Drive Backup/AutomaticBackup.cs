@@ -83,7 +83,9 @@ class AutomaticBackup
 
     /**
         <summary>
-            Copies the files of the <paramref name="sourceDir"/> to the <paramref name="destinationDir"/> with the option to recursively copy any subdirectories of the <paramref name="sourceDir"/> 
+            Copies the files of the <paramref name="sourceDir"/> to the <paramref name="destinationDir"/> with the option to recursively copy any subdirectories of the <paramref name="sourceDir"/> <br/>
+
+            Method taken from: https://learn.microsoft.com/en-us/dotnet/standard/io/how-to-copy-directories
         </summary>
 
         <param name="sourceDir">source directory to copy from</param>
