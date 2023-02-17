@@ -20,13 +20,13 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: External Drive Backup
+      working-directory: External Drive Backup/AutomaticBackupScript/AutomaticBackup
     - name: Build
       run: dotnet build --no-restore
-      working-directory: External Drive Backup
+      working-directory: External Drive Backup/AutomaticBackupScript/AutomaticBackup
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: External Drive Backup
+      working-directory: External Drive Backup/AutomaticBackupScript/AutomaticBackupTest
       
     - uses: actions/cache@v3
       with:
