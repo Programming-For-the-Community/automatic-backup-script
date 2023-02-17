@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomaticBackup", "AutomaticBackup\AutomaticBackup.csproj", "{9B551B0F-494B-442D-96E4-1EFF24C57B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomaticBackupTest", "AutomaticBackupTest\AutomaticBackupTest.csproj", "{F6350D6F-495C-4512-9746-5A2A3DE2F670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B551B0F-494B-442D-96E4-1EFF24C57B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B551B0F-494B-442D-96E4-1EFF24C57B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B551B0F-494B-442D-96E4-1EFF24C57B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B551B0F-494B-442D-96E4-1EFF24C57B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6350D6F-495C-4512-9746-5A2A3DE2F670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6350D6F-495C-4512-9746-5A2A3DE2F670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6350D6F-495C-4512-9746-5A2A3DE2F670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6350D6F-495C-4512-9746-5A2A3DE2F670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
