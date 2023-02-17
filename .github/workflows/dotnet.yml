@@ -37,7 +37,7 @@ jobs:
           ${{ runner.os }}-professorchaos0802
     - name: Install dependencies
       run: dotnet add package Newtonsoft.Json --version 12.0.1
-      working-directory: External Drive Backup
+      working-directory: External Drive Backup/AutomaticBackupScript/AutomaticBackup
       
       
       
