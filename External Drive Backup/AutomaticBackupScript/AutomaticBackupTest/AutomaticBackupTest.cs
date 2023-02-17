@@ -5,7 +5,11 @@ namespace AutomaticBackupTest;
 public class UnitTest1
 {
     [TestMethod]
-    public void TestMethod1()
+    public void AutomaticBackupCreation()
     {
+        AutomaticBackup ab = new AutomaticBackup("C");
+
+        Assert.AreEqual(@"C:\", ab.DriveLocation);
+        Assert.AreEqual($@"{DateTime.Now.ToString("ddd-ddMMMyyyy")}\", ab.DailyFolder);
     }
 }
