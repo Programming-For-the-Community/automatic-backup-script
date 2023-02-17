@@ -3,10 +3,10 @@ using System.IO;
 namespace AutomaticBackup;
 /**
     <summary>
-        Class <c cref="AutomaticBackup">AutomaticBackup</c> automatically backs up selected directories from the Documents and Desktop folders to an external drive
+        Class <c cref="Backup">Backup</c> automatically backs up selected directories from the Documents and Desktop folders to an external drive
     </summary>
 */
-class AutomaticBackup
+public class Backup
 {
     /// <value><c>backupsFolder</c> is the name of the master backup directory</value>
     private string backupsFolder = @"Laptop Backups\";
@@ -18,19 +18,19 @@ class AutomaticBackup
     private string documents = @"C:\Users\hahmcm\Documents";
 
     /// <value> Property <c>DriveLocation</c> holds the location of the drive to backup the files to</value>
-    private string DriveLocation { get; set; }
+    public string DriveLocation { get; set; }
 
     /// <value> Property <c>DailyFolder</c> holds the location of folder to backup to each day</value>
-    private string DailyFolder { get; set; }
+    public string DailyFolder { get; set; }
 
     /**
         <summary>
-            AutomaticBackup constructor takes a string, <paramref name="driveLocation"/> which is where the backup will be created
+            Backup constructor takes a string, <paramref name="driveLocation"/> which is where the backup will be created
         </summary>
 
         <param name="driveLocation">string of the drive to backup the files to</param>
     */
-    public AutomaticBackup(string driveLocation)
+    public Backup(string driveLocation)
     {
         DriveLocation = $@"{driveLocation}:\";
         DailyFolder = $@"{DateTime.Now.ToString("ddd-ddMMMyyyy")}\";
@@ -45,14 +45,14 @@ class AutomaticBackup
     */
     static void Main(string[] args)
     {
-        AutomaticBackup ab;
+        Backup ab;
         if (args.Length > 0)
         {
-            ab = new AutomaticBackup(args[0].ToUpper());
+            ab = new Backup(args[0].ToUpper());
         }
         else
         {
-            ab = new AutomaticBackup("D");
+            ab = new Backup("D");
         }
 
         bool hasDDrive = false;
