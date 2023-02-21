@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AutomaticBackupTest
-build_property.ProjectDir = C:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\AutomaticBackupScript\AutomaticBackup\AutomaticBackupTest\
+build_property.ProjectDir = c:\Users\hahmcm\Desktop\Custom Programs\AutomaticBackup\automatic-backup-script\External Drive Backup\AutomaticBackupScript\AutomaticBackup\AutomaticBackupTest\
