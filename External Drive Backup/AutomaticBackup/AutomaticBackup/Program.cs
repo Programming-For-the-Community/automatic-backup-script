@@ -12,6 +12,10 @@ class Program
     static void Main(string[] args)
     {
         Backup ab;
+        bool hasDDrive = false;
+        int maxAgeInMonths = 1;
+
+        // If provided a specific external drive, use that drive
         if (args.Length > 0)
         {
             ab = new Backup(args[0].ToUpper());
@@ -20,8 +24,6 @@ class Program
         {
             ab = new Backup("D");
         }
-
-        bool hasDDrive = false;
 
         try
         {
@@ -37,6 +39,17 @@ class Program
             ab.CreateBackupsDir();
             ab.CreateDailyBackupFolder();
 
+            // Remove backups that are more than one month old
+            try
+            {
+                ab.RemoveOldBackups(maxAgeInMonths);
+            }
+            catch(DirectoryNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            // Try to copy the custom programs folder
             try
             {
                 ab.CopyCustomPrograms();
@@ -46,6 +59,7 @@ class Program
                 Console.WriteLine(e.Message);
             }
 
+            // Try to copy the Documents folder
             try
             {
                 ab.CopyDocuments();
