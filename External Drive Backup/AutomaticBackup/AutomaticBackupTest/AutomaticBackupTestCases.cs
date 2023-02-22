@@ -16,7 +16,7 @@ public class AutomaticBackupTestCases
         AutomaticBackup.Backup ab = new AutomaticBackup.Backup("C");
 
         Assert.AreEqual(@"C:\", ab.DriveLocation);
-        Assert.AreEqual($@"{DateTime.Now.ToString("ddMMMyyyy")}\", ab.DailyFolder);
+        Assert.AreEqual($@"{DateTime.Now:ddMMMyyyy}\", ab.DailyFolder);
     }
 
     /**
@@ -34,7 +34,8 @@ public class AutomaticBackupTestCases
         Assert.IsTrue(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"));
         Assert.IsFalse(ab.CreateBackupsDir());
 
-        AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
+        if (Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"))
+            AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
         Assert.IsFalse(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"));
     }
 
@@ -53,7 +54,8 @@ public class AutomaticBackupTestCases
         Assert.IsTrue(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\{ab.DailyFolder}"));
         Assert.IsFalse(ab.CreateDailyBackupFolder());
 
-        AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
+        if (Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"))
+            AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
         Assert.IsFalse(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"));
     }
 
@@ -77,7 +79,8 @@ public class AutomaticBackupTestCases
         ab.RemoveOldBackups(3);
         Assert.IsFalse(Directory.Exists(dirToCreate));
 
-        AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
+        if(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"))
+            AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
         Assert.IsFalse(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"));
     }
 
