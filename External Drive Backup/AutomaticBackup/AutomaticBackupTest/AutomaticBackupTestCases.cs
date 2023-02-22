@@ -65,19 +65,17 @@ public class AutomaticBackupTestCases
      * </summary>
      */
     [TestMethod]
-    public void AutomaticBackupDeleteOldDirectories()
+    public void AutomaticBackupDeleteOldBackups()
     {
         AutomaticBackup.Backup ab = new AutomaticBackup.Backup("C");
-        string dirToCreate = @"C:\Laptop Backups\21Feb2023";
+        ab.CreateBackupsDir();
+        ab.CreateDailyBackupFolder();
 
-        if(!Directory.Exists(dirToCreate)) 
-            Directory.CreateDirectory(dirToCreate);
+        Directory.SetCreationTime($@"{ab.DriveLocation}Laptop Backups\{ab.DailyFolder}", DateTime.Now.AddMonths(-5));
 
-        Directory.SetCreationTime(dirToCreate, DateTime.Now.AddMonths(-5));
-
-        Assert.IsTrue(Directory.Exists(dirToCreate));
+        Assert.IsTrue(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\{ab.DailyFolder}"));
         ab.RemoveOldBackups(3);
-        Assert.IsFalse(Directory.Exists(dirToCreate));
+        Assert.IsFalse(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\{ab.DailyFolder}"));
 
         if(Directory.Exists($@"{ab.DriveLocation}Laptop Backups\"))
             AutomaticBackup.Backup.DeleteDirectory($@"{ab.DriveLocation}Laptop Backups\", true);
