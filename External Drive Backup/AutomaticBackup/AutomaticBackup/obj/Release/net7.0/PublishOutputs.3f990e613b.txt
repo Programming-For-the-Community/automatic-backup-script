@@ -1,0 +1,5 @@
+C:\temp\BackupToExtDrive\AutomaticBackup.exe
+C:\temp\BackupToExtDrive\AutomaticBackup.dll
+C:\temp\BackupToExtDrive\AutomaticBackup.deps.json
+C:\temp\BackupToExtDrive\AutomaticBackup.runtimeconfig.json
+C:\temp\BackupToExtDrive\AutomaticBackup.pdb

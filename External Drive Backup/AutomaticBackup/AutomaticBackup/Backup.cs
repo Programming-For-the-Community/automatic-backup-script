@@ -181,7 +181,7 @@ public class Backup
             foreach (string dir in dirs)
             {
                 string[] dirParts = dir.Split(@"\");
-                if (!(dir.EndsWith("Visual Studio 2019") || dir.EndsWith("SW Log Files") || dir.EndsWith("My Shapes") || dir.EndsWith("SOLIDWORKSComposer") || dir.EndsWith(".metadata") || dir.EndsWith("ArduinoData") || dir.EndsWith("My Pictures") || dir.EndsWith("My Music") || dir.EndsWith("My Videos")))
+                if (!(dir.Contains("Visual Studio") || dir.EndsWith("SW Log Files") || dir.EndsWith("My Shapes") || dir.EndsWith("SOLIDWORKSComposer") || dir.EndsWith(".metadata") || dir.EndsWith("ArduinoData") || dir.EndsWith("My Pictures") || dir.EndsWith("My Music") || dir.EndsWith("My Videos")))
                 {
                     CopyDirectory(dir, DriveLocation + backupsFolder + DailyFolder + @$"Documents Backup\{dirParts[dirParts.Length - 1]}", true);
                 }
